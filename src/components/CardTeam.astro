@@ -1,16 +1,23 @@
+---
+const { urlImage, name, position } = Astro.props;
+---
+
 <div class="d-grid justify-content-center">
   <div class="d-flex flex-column align-items-center">
     <div
       class="image-wrapper"
-      style="background-image: url('/images/default.webp'); 
-    background-size: cover; 
-    background-position: center;"
+      style={`background-image: url('${urlImage}');
+      background-size: cover; 
+      background-position: center;`}
     >
     </div>
-    <div class="text-white text-center text-md-start mt-4">
-      <p class="fw-bold h5">Lorem ipsum dolor sit</p>
+    <div
+      class="text-white text-center text-md-start mt-5"
+      style="width: 240px;"
+    >
+      <p class="fw-bold h5">{name}</p>
       <p class="mt-2">
-        Lorem ipsum dolor sit amet <br /> consectetur
+        {position}
       </p>
     </div>
   </div>
@@ -20,12 +27,7 @@
     position: relative;
     width: 200px;
     aspect-ratio: 1;
-    background-color: #1e5eff;
-    border-radius: 25% / 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-    box-shadow: -15px 15px 0 #37383c4a;
+    border-radius: 15%;
+    box-shadow: -20px 20px 0 #37383c4a;
   }
 </style>

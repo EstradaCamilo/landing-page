@@ -1,5 +1,6 @@
 ---
 import "../assets/main.scss";
+import { site } from "../settings/site";
 ---
 
 <!doctype html>
@@ -9,7 +10,8 @@ import "../assets/main.scss";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Landing Page</title>
+    <title>{site.name}</title>
+    <meta name="description" content={site.description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
