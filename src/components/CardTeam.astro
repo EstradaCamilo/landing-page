@@ -6,9 +6,7 @@ const { urlImage, name, position } = Astro.props;
   <div class="d-flex flex-column align-items-center">
     <div
       class="image-wrapper"
-      style={`background-image: url('${urlImage}');
-      background-size: cover; 
-      background-position: center;`}
+      style={`background-image: url('${urlImage}');`}
     >
     </div>
     <div
@@ -27,7 +25,10 @@ const { urlImage, name, position } = Astro.props;
     position: relative;
     width: 200px;
     aspect-ratio: 1;
-    border-radius: 15%;
-    box-shadow: -20px 20px 0 #37383c4a;
+    border-radius: 20%;
+    box-shadow: -25px 25px 0 #37383c4a;
+    background-size: cover;
+    background-position: center;
+    transform: rotate3d(1, 1, 1, 25deg);
   }
 </style>

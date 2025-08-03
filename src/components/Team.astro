@@ -3,32 +3,45 @@ import CardTeam from "./CardTeam.astro";
 ---
 
 <section class="container-xxl px-0 py-4 py-md-5 pt-md-0">
-  <div
-    style="
-    height: 500px;
-    background-image: url('/images/default.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 64px;
-    background-attachment: fixed;
-  "
-  >
-  </div>
+  <div id="banner-team"></div>
   <div class="bg-primary p-5">
     <div
       class="d-flex flex-column flex-md-row"
       style="align-items: stretch; min-height: 100%;"
     >
       <div class="col-12 col-md-4">
-        <CardTeam urlImage="/images/default.webp" name="Lorem ipsum dolor sit" position="Lorem ipsum dolor sit amet consectetur" />
+        <CardTeam
+          urlImage="/images/default.webp"
+          name="Lorem ipsum dolor sit"
+          position="Lorem ipsum dolor sit amet consectetur"
+        />
       </div>
       <div class="col-12 col-md-4 mt-4 mt-md-0">
-        <CardTeam urlImage="/images/default.webp" name="Lorem ipsum dolor sit" position="Lorem ipsum dolor sit amet consectetur" />
+        <CardTeam
+          urlImage="/images/default.webp"
+          name="Lorem ipsum dolor sit"
+          position="Lorem ipsum dolor sit amet consectetur"
+        />
       </div>
       <div class="col-12 col-md-4 mt-4 mt-md-0">
-        <CardTeam urlImage="/images/default.webp" name="Lorem ipsum dolor sit" position="Lorem ipsum dolor sit amet consectetur" />
+        <CardTeam
+          urlImage="/images/default.webp"
+          name="Lorem ipsum dolor sit"
+          position="Lorem ipsum dolor sit amet consectetur"
+        />
       </div>
     </div>
   </div>
 </section>
+
+<style scoped>
+  #banner-team {
+    height: 500px;
+    background-image: url("/images/default.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 64px;
+    background-attachment: fixed;
+  }
+</style>
