@@ -8,6 +8,10 @@ h6 {
   margin: 0 !important;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
@@ -34,5 +38,8 @@ $border-radius: 0;
 $primary: #305DFF;
 $warning: #FFBE4E;
 $danger: #F64938;
+
+
+$font-family-base: 'Open Sans', sans-serif;
 
 @import "bootstrap/scss/bootstrap";
